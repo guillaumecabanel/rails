@@ -110,9 +110,9 @@ config.autoload_paths << "#{Rails.root}/extras"
 
 those are not eager loaded and won't be verified. Adding them to the eager load paths is easy:
 
-```ruby
-config.autoload_paths << "#{Rails.root}/extras"
-config.eager_load_paths << "#{Rails.root}/extras"
+```diff
+-config.autoload_paths << "#{Rails.root}/extras"
++config.eager_load_paths << "#{Rails.root}/extras"
 ```
 
 ### zeitwerk:check
